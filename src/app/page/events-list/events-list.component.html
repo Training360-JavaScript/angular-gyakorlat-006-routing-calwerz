@@ -1,0 +1,14 @@
+<table class="table">
+    <thead>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Location</th>
+    </thead>
+    <tr *ngFor="let event of eventList">
+        <td>{{ event.name }}</td>
+        <td>{{ event.date }}</td>
+        <td>{{ event.time }}</td>
+        <td>{{ event.location.country }}</td>
+    </tr>
+</table>
